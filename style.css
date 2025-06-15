@@ -42,24 +42,25 @@ nav {
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 1.5rem;
+  gap: 1rem;
+  overflow-x: auto;         
+  white-space: nowrap;      
+  scrollbar-width: none;  
 }
 
-.nav-links a {
+.nav-links::-webkit-scrollbar {
+  display: none;           
+}
+
+.nav-links li a {
   background-color: #ffffff;
-  padding: 8px 12px;
+  padding: 8px 14px;
   border-radius: 4px;
   text-decoration: none;
   color: #4a90e2;
   font-weight: 600;
-  display: inline-block;
-  transition: color 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.nav-links a:hover {
-  background-color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  white-space: nowrap;    
 }
 
 .nav-links a:hover span,
