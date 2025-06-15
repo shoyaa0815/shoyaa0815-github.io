@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Segoe UI', 'Noto Sans Thai', sans-serif;
   background-color: #f2f7f9;
@@ -10,7 +11,7 @@ body {
   line-height: 1.6;
   padding-top: 60px;
 }
-/* เมนูด้านบนแบบทันสมัย */
+
 nav {
   position: fixed;
   top: 0;
@@ -45,20 +46,11 @@ nav {
 }
 
 .nav-links a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  padding: 8px 12px;
-  border-radius: 4px;
-  transition: background 0.3s, color 0.3s;
-}
-
-.nav-links a {
-  background-color: #ffffff; /* ขาว */
+  background-color: #ffffff;
   padding: 8px 12px;
   border-radius: 4px;
   text-decoration: none;
-  color: #4a90e2; /* ตัวอักษรฟ้า */
+  color: #4a90e2;
   font-weight: 600;
   display: inline-block;
   transition: color 0.3s ease;
@@ -66,19 +58,11 @@ nav {
   overflow: hidden;
 }
 
-/* ไม่ต้องเปลี่ยนพื้นหลังตอน hover */
 .nav-links a:hover {
-  background-color: #ffffff; /* คงไว้เหมือนเดิม */
+  background-color: #ffffff;
 }
 
-/* สีรุ้งแค่ตัวอักษรใน span */
-.nav-links a:hover span {
-  background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet, red);
-  background-size: 800% 800%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: rainbow-text 5s linear infinite;
-}
+.nav-links a:hover span,
 .nav-links a.active span {
   background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet, red);
   background-size: 800% 800%;
@@ -91,7 +75,7 @@ nav {
   0% { background-position: 0% 50%; }
   100% { background-position: 100% 50%; }
 }
-/* สำหรับจอเล็ก */
+
 .menu-toggle {
   display: none;
   font-size: 24px;
@@ -102,7 +86,6 @@ nav {
   .menu-toggle {
     display: block;
   }
-
   .nav-links {
     display: none;
     flex-direction: column;
@@ -115,18 +98,10 @@ nav {
     padding: 1rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
-
   .nav-links.active {
     display: flex;
   }
 }
-
-
-
-
-
-
-
 
 .hero-banner {
   position: relative;
@@ -163,30 +138,6 @@ nav {
   margin-bottom: 1rem;
 }
 
-
-
-.button-group {
-  margin-top: 1.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.hero-btn {
-  background-color: #4a90e2;
-  color: white;
-  text-decoration: none;
-  padding: 0.7rem 1.5rem;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.hero-btn:hover {
-  background-color: #357ABD;
-}
-
 section {
   max-width: 80%;
   margin: 2rem auto;
@@ -195,12 +146,14 @@ section {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
 section h2 {
   color: #4a90e2;
   border-bottom: 2px solid #4a90e2;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
 }
+
 footer {
   text-align: center;
   padding: 1rem;
@@ -209,88 +162,75 @@ footer {
   font-size: 0.9rem;
   margin-top: 2rem;
 }
+
 .project-content-img {
-    height: auto;
-    display: block; 
-    margin: 15px auto; 
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  height: auto;
+  display: block; 
+  margin: 15px auto; 
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.project h4 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.project ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.project ul li {
+  margin-bottom: 5px;
+}
+
+.warning-box {
+  background-color: #ffe0e0;
+  border: 2px solid #ff6666;
+  padding: 1rem;
+  margin-top: 20px;
+  border-radius: 6px;
+  color: #a94442;
+  font-weight: bold;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
   }
-  .project h4 {
-    margin-top: 30px;
-    margin-bottom: 15px;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 5px;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  .project ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    margin-bottom: 10px;
-  }
-  .project ul li {
-    margin-bottom: 5px;
-  }
-  .warning-box {
-    background-color: #ffe0e0; 
-    border: 2px solid #ff0000; 
-    color: #ff0000;
-    padding: 15px;
-    margin: 25px 0;
-    border-radius: 8px;
-    font-weight: bold;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  .warning-box strong {
-    font-size: 1.2em;
-    display: block;
-    margin-bottom: 5px;
-  }
-/* เมนูมือถือแบบ responsive */
-.menu-toggle {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
+}
+
+.animate-on-load {
+  animation: fadeInUp 0.8s ease-out;
 }
 
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    color: #4a90e2;
+  .animate-on-load {
+    animation: fadeInUp 1s ease-out;
   }
-
-  .nav-links {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: #ffffff;
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem 2rem;
-    display: none;
+}
+@keyframes textFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
   }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-links li {
-    margin-bottom: 1rem;
-  }
-
-  .nav-links a {
-    width: 100%;
-    padding: 10px 0;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-
-
-
-
-
-
-
-
+.text-animate {
+  display: inline-block;
+  animation: textFadeUp 0.8s ease-out forwards;
+  opacity: 0;
+}
