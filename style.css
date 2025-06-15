@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', 'Noto Sans Thai', sans-serif;
+  background-color: #f2f7f9;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 60px;
+}
+/* เมนูด้านบนแบบทันสมัย */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4a90e2;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a {
+  background-color: #ffffff; /* ขาว */
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #4a90e2; /* ตัวอักษรฟ้า */
+  font-weight: 600;
+  display: inline-block;
+  transition: color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ไม่ต้องเปลี่ยนพื้นหลังตอน hover */
+.nav-links a:hover {
+  background-color: #ffffff; /* คงไว้เหมือนเดิม */
+}
+
+/* สีรุ้งแค่ตัวอักษรใน span */
+.nav-links a:hover span {
+  background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet, red);
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-text 5s linear infinite;
+}
+.nav-links a.active span {
+  background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet, red);
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-text 5s linear infinite;
+}
+
+@keyframes rainbow-text {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+
+
+
+
+
+
+
+.hero-banner {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.banner-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 1rem;
+}
+
+
+
+.button-group {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero-btn {
+  background-color: #4a90e2;
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #357ABD;
+}
+
+section {
+  max-width: 80%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+section h2 {
+  color: #4a90e2;
+  border-bottom: 2px solid #4a90e2;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #e1ecf4;
+  color: #333;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+.project-content-img {
+    height: auto;
+    display: block; 
+    margin: 15px auto; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  }
+  .project h4 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+  }
+  .project ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .project ul li {
+    margin-bottom: 5px;
+  }
+  .warning-box {
+    background-color: #ffe0e0; 
+    border: 2px solid #ff0000; 
+    color: #ff0000;
+    padding: 15px;
+    margin: 25px 0;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .warning-box strong {
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+
