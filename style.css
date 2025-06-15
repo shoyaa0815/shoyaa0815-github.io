@@ -85,7 +85,6 @@ nav {
   cursor: pointer;
 }
 
-/* ปรับเปลี่ยนจาก .nav-links.active เป็น .nav-links.show เพื่อให้ตรงกับ JS */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
