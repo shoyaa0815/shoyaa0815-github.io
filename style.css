@@ -83,9 +83,6 @@ nav {
 }
 
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
   .nav-links {
     display: none;
     flex-direction: column;
