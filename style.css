@@ -10,7 +10,20 @@ body {
   color: #333;
   line-height: 1.6;
   padding-top: 60px;
+  overflow-x: hidden; 
 }
+
+.project-content-img {
+  width: 100%;       
+  max-width: 100%;  
+  height: auto;
+  display: block;
+  margin: 15px auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
 
 nav {
   position: fixed;
