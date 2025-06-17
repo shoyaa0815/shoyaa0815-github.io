@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shoya</title>
-    <style>
-        *{margin: 0;padding: 0; box-sizing: border-box;}
-        iframe{width: 100vw;height: 100vh;}
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shoya Portfolio - หน้าหลัก</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <iframe src="https://shoyaa0815.github.io/shoyaa0815-github.io/" frameborder="0" ></iframe>
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="logo">Shoya</div>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html"><span>หน้าหลัก</span></a></li>
+        <li><a href="projects.html"><span>ผลงาน</span></a></li>
+        <li><a href="education.html"><span>ประวัติการศึกษา</span></a></li>
+        <li><a href="activity.html"><span>กิจกรรม</span></a></li>
+        <li><a href="about.html"><span>เกี่ยวกับฉัน</span></a></li>
+        <li><a href="contact.html"><span>ติดต่อ</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero-banner animate-on-load">
+    <img src="images/banner1.jpg" alt="Banner" class="banner-img" />
+    <div class="overlay">
+      <img src="images/profile.png" alt="Profile" class="profile-img" />
+      <h1 class="text-animate-text">Phanutis Udomkusonsri <br><span>[Shoya]</span></h1>
+    </div>
+  </header>
+
+  <footer>
+    <p>Shoya Portfolio © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
