@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="bg-light p-d">
-    <div>class="mb-3"</div>
-        <h2>บวกเลข 2 จำนวน</h2>
-        <input id="a" type="number">
-        <input id="b" type="number">
-        <butom id="s1"onclick="alert(+a.value + +b.value)" class="btn btn-primary">คำนวณ</butom>
-    
-    <div>class="mb-3"</div>
-        <h2>ลบเลข 2 จำนวน</h2>    
-        <input id="c" type="number">
-        <input id="d" type="number">
-        <butom id="s2"onclick="alert(+c.value - +d.value )" class="btn btn-primary">คำนวณ</butom>
-    
-    <div>class="mb-3"</div>
-        <h2>หาพื้นที่สามเหลี่ยม</h2>  
-        <input id="e" type="number">
-        <input id="f" type="number">
-        <butom id="s2"onclick="alert(+e.value * +f.value *1/2)" class="btn btn-primary">คำนวณ</butom>
-        
+<body class="bg-light p-4">
+
+  <div class="mb-3">
+    <h2>บวกเลข 2 จำนวน</h2>
+    <input id="a" type="number" class="form-control mb-2" placeholder="กรอกตัวเลขแรก">
+    <input id="b" type="number" class="form-control mb-2" placeholder="กรอกตัวเลขที่สอง">
+    <button id="s1" onclick="alert(+a.value + +b.value)" class="btn btn-primary">คำนวณ</button>
+  </div>
+
+  <div class="mb-3">
+    <h2>ลบเลข 2 จำนวน</h2>
+    <input id="c" type="number" class="form-control mb-2" placeholder="กรอกตัวเลขแรก">
+    <input id="d" type="number" class="form-control mb-2" placeholder="กรอกตัวเลขที่สอง">
+    <button id="s2" onclick="alert(+c.value - +d.value)" class="btn btn-primary">คำนวณ</button>
+  </div>
+
+  <div class="mb-3">
+    <h2>หาพื้นที่สามเหลี่ยม</h2>
+    <input id="e" type="number" class="form-control mb-2" placeholder="ฐาน">
+    <input id="f" type="number" class="form-control mb-2" placeholder="สูง">
+    <button id="s3" onclick="alert((+e.value * +f.value) / 2)" class="btn btn-primary">คำนวณ</button>
+  </div>
+
 </body>
 </html>
