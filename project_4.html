@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-light p-d">
+    <h2 class="mb-3"บวกเลข 2 จำนวน></h2>
     <input id="a" type="number">
     <input id="b" type="number">
-    <butom onclick="alert(+a.value + +b.value)">คำนวณ</butom>
+    <butom id="s1"onclick="alert(+a.value + +b.value)" class="btn btn-primary">คำนวณ</butom>
+
+    <h2 class="mb-3"หาพื้นที่สามเหลี่ยม></h2>
+    <input id="c" type="number">
+    <input id="d" type="number">
+    <butom id="s2"onclick="alert(+c.value * +d.value *1/2)" class="btn btn-primary">คำนวณ</butom>
     
 </body>
 </html>
