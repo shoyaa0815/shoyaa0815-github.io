@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>โปรเจกต์5</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h2>เเปลงหน่วยนิ้วไปเซนติเมตร</h2>
+  <div class="mb-3">
+    <input id="a" class="form-control mb-2" placeholder="กรอกตัวเลขแรก">
+    
+    <select id="b" class="form-select" aria-label="Default select example">
+        <option selected>เลือกตัวเลือก</option>
+        <option value="to_cm">นิ้วไปเซน</option>
+        <option value="to_inch">เซนไปนิ้ว</option>
+        
+    </select>
 
+    <button id="s1" onclick="convert()" class="btn btn-primary">คำนวณ</button>
+  </div>
+
+  <script>
+    function convert() {
+        let val = parseFloat(document.getElementById('a').value);
+        let unit = document.getElementById('b').value;
+
+        if (isNaN(val)) {
+            alert("กรอกตัวเลข");
+            return;
+        } 
+
+        let result;
+        if (unit === 'to_cm') {
+            result = val * 2.54;
+            alert(result.toFixed(2) + "เซนติเมตร");
+        }else {
+            result = val / 2.54;
+            alert(result.toFixed(2) + "นิ้ว");
+        }
+    }
+  </script>
+
+  
+
+</body>
+</html>
