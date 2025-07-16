@@ -1,82 +1,49 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>กล่องยืนยันBootbox.js</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/6.0.0/bootbox.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>งานครั้งที่ 6</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f8f9fa;
-    }
-
-    .container {
-        margin-top: 30px;
-        padding: 30px;
-    }
-
-    h1 {
-        color: #000000;
-        margin-bottom: 20px;
-    }
-
-    p {
-        color: #000000;
-    }
-
-    #btn-success {
-        color: #000000;
-    }
-    #btn-danger {
-        color: #000000;
-    }
-   
+        * {
+            box-sizing: border-box;
+            font-family: kanit;
+        }
     </style>
+
 </head>
-<body>
 
-    <div class="container">
-        <h1>กล่องยืนยันด้วย bootbox.js</h1>
-        <p>คลิกปุ่มเพื่อแสดงกล่องยืนยันลบข้อมูล</p>
-        <button id="deleteButton" class="btn btn-danger">ลบข้อมูล</button>
+<body class="bg-light m-3 justify-content-center d-flex">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        แจ้งเตือน
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">แจ้งเตือน</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    นี่คือข้อความแจ้งเตือน
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                    <button type="button" class="btn btn-primary"  data-bs-dismiss="modal" onclick="alert('ยอมรับข้อตกลงแล้ว')">ตกลง</button>
+                </div>
+            </div>
+        </div>
     </div>
-    
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-    const deleteButton = document.getElementById('deleteButton');
 
-    deleteButton.addEventListener('click', function() {
-        bootbox.confirm({
-            message: 'แน่ใจไหมว่าอยากลบข้อมูลนี้',
-            buttons: {
-                confirm: {
-                    label: 'ยืนยัน',
-                    className: 'btn-success'
-                },
-                cancel: {
-                    label: 'ยกเลิก',
-                    className: 'btn-danger'
-                }
-            },
-            callback: function (result) {
-
-                if (result) {
-                    console.log('ข้อมูลถูกลบแล้ว');
-                    alert('ข้อมูลถูกลบแล้ว');
-                } else {
-                    console.log('การลบข้อมูลถูกยกเลิก');
-                    alert('การลบข้อมูลถูกยกเลิก'); 
-                }
-            }
-        });
-    });
-});
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
