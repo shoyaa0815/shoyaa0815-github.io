@@ -139,7 +139,7 @@ if (isset($_POST['login'])) {
     if (isset($_SESSION['username_register']) && isset($_SESSION['password_register'])) {
         if ($_SESSION['username_login'] == $_SESSION['username_register'] && $_SESSION['password_login'] == $_SESSION['password_register']) {
             $_SESSION['action'] = "a";
-            header("Location: go_to_project.php");
+            header("Location: index.html");
             exit();
         } else {
             $_SESSION['error'] = "ชื่อผู้ใช้หรือรหัสผ่านผิด";
@@ -158,3 +158,4 @@ if (isset($_SESSION['error'])) {
 }
 
 ?>
+
